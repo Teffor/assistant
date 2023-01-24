@@ -1,0 +1,287 @@
+@font-face {
+    font-family: 'Font-mon';
+    src: local('Font-mon'), url(../fonts/Montserrat-Medium.ttf);
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    background: #EFE2BA;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    height: 115px;
+    top: 0px;
+
+    background: rgba(215, 153, 34, 0.5);
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    left: 0px;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);;
+}
+
+
+a {
+    color: #F13C20;
+    text-decoration: none;
+}
+
+
+.logo {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    left: 75px;
+    top: 0px;
+    filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.name {
+    position: absolute;
+    width: 490px;
+    height: 51px;
+    left: 650px;
+    top: 30px;
+
+    font-family: 'Font-mon';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 51px;
+    text-align: center;
+
+    color: #4056A1;
+
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navigation {
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 250px;
+    height: 1200px;
+    left: 0px;
+    top: 0px;
+    bottom: 0;
+    z-index: 999999;
+
+    background: #C5CBE3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nav_text {
+    font-family: "Font-mon";
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    left: 35px;
+    color: #4056A1;
+
+}
+
+.nav_text_foot {
+    font-family: "Font-mon";
+    font-size: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: #D79922;
+}
+
+.navigation ul {
+    text-align: left;
+    list-style: none;
+    padding-right: 20%;
+    padding-top: 55%;
+}
+
+.navigation li {
+    margin: 40px 0;
+    font-family: "Font-mon";
+    font-size: 18px;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+}
+
+.foot{
+    position: absolute;
+    font-family: 'Font-mon';
+    font-size: 19px;
+    text-align: center;
+    color: #DADADA;
+    bottom: 10px;
+    left: 300px;
+}
+
+.home_text {
+    position: absolute;
+    left: 300px;
+    top: 60px;
+    color: #4056A1;
+}
+
+.home_text p {
+    font-size: 15px;
+    font-family: 'Font-mon';
+    color: #4056A1;
+}
+
+.home_text h3 {
+    text-align: center;
+    font-family: 'Font-mon';
+    color: #4056A1;
+}
+
+.home_text li {
+    font-family: 'Font-mon';
+    color: #4056A1;
+}
+
+.home_text h1 {
+    font-family: 'Font-mon';
+    width: 600px;
+    color: #4056A1;
+    position: absolute;
+    left: 400px;
+    top: -15px
+}
+
+.home_img {
+    position:absolute;
+    width: 250px;
+    height: 180px;
+    right: 35px;
+    top: 690px;
+}
+
+ .empty {
+     height: 40px;
+ }
+
+.demand_graph_1 {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    left: 20px;
+    top: 0px;
+}
+
+.demand_graph_2 {
+    width: 400px;
+    height: 300px;
+    left: 20px;
+    position: absolute;
+    top: 300px
+}
+
+.tables {
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: flex-start;
+    position: absolute;
+    left: 500px;
+    top: 50px
+}
+
+.tables table {
+    color: #4056A1;
+}
+
+.geography_graph_1 {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    left: 20px;
+    top: 0px;
+}
+
+.geography_graph_2 {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 300px;
+    left: 20px;
+}
+
+.graph_title1 {
+    font-family: "Font-mon";
+    position: absolute;
+    z-index: 999999999999;
+    color: #4056A1;
+    top: -45px;
+    left: 120px;
+    width: 300px;
+}
+
+.graph_title2 {
+    font-family: "Font-mon";
+    position: absolute;
+    z-index: 999999;
+    color: black;
+    left: 120px;
+    top: 290px;
+    width: 300px;
+}
+
+.tables_skills {
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: flex-start;
+    position: absolute;
+    left: 0px;
+    top: 50px;
+
+}
+
+.tables_skills table {
+    color: #4056A1;
+}
+
+.skills_graph {
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    left: 400px;
+    top: 500px
+}
+
+.empty_skills {
+    height: 750px;
+}
+
+.last_text {
+    font-family: 'Font-mon';
+    width: 600px;
+    color: #4056A1;
+    position: absolute;
+    left: 100px;
+    top: -15px
+}
+
+.LVtable {
+    left: 300px;
+    top: 100px;
+    position: absolute;
+    color: #4056A1;
+}
+
+.LVtable p {
+    color: #4056A1;
+}
+
+.navigate_page {
+    color: #4056A1;
+}

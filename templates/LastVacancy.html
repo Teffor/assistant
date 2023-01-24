@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Последние вакансии</title>
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
+</head>
+<body>
+{% for nav in navigation %}
+    <header>
+        <div class="name">{{ nav.title }}</div>
+    </header>
+    <main>
+    <div class="body">
+    <div class="navigation" style="height: 2500px">
+        <div class="name"
+             style="left: -120px; color: #4056A1; font-size: 25px; z-index: 999999999999; top: 5px">{{ nav.title2|safe }}</div>
+        <img class="logo" style="top:110px; left: 90px;" src="{{ nav.logo_field.url }}">
+        <nav>
+            <ul>
+                <li><a id="navigate_page" href="/">{{ nav.first_menu }}</a></li>
+                <li><a href="{% url 'demend' %}">{{ nav.second_menu }}</a></li>
+                <li><a href="{% url 'geography' %}">{{ nav.thierd_menu }}</a></li>
+                <li><a href="{% url 'skills' %}">{{ nav.fourth_menu }}</a></li>
+                <li><a href="{% url 'lastVacancy' %}">{{ nav.fifth_menu }}</a></li>
+            </ul>
+            <p class="nav_text_foot">Кузнецов Илья Олегович<br>РИ-210940 АТ-27</p>
+        </nav>
+    </div>
+{% endfor %}
+
+<div class="home_text" style="margin-top: 5%" >
+{% for lv in last_vacancies %}
+            <h1>{{lv.title}}</h1>
+            <div class="empty_skills"></div>
+        </div>
+        <div class="LVtable" style="margin-top: 5%">
+            {% for i in vacs %}
+            <h3>{{ i.name }}</h3>
+            <p>Описание: {{ i.description }}</p>
+            <p>Навыки: {{ i.key_skills }}</p>
+            <p>Компания: {{ i.employer }}</p>
+            <p>Зарплата: {{ i.salary }}</p>
+            <p>Город: {{ i.area }}</p>
+            <p>Дата публикации: {{ i.published_at }}</p>
+            <p>Ссылка: {{ i.alternate_url }}</p>
+        {% endfor %}
+        {% endfor %}
+
+        </div>
+    </div>
+</main>
+<footer>
+</footer>
+</body>
+</html>
